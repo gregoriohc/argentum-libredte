@@ -1,0 +1,25 @@
+{
+    "name": "gregoriohc/argentum-libredte",
+    "description": "Chile LibreDTE driver for the Argentum PHP electronic documents processing library",
+    "license": "MIT",
+    "keywords": ["billing", "invoicing", "libredte", "facturacion"],
+    "authors": [
+        {
+            "name": "Gregorio Hernandez Caso",
+            "email": "gregoriohc@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2",
+        "gregoriohc/argentum-common": "~1.0.10",
+        "sasco/libredte-sdk-php": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Argentum\\LibreDTE\\": "src/"
+        }
+    }
+}
