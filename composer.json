@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "php": ">=5.3.2",
+        "php": ">=5.5",
         "gregoriohc/argentum-common": "~1.0.10",
         "sasco/libredte-sdk-php": "dev-master"
     },
