@@ -21,7 +21,7 @@ class Response extends AbstractResponse implements ResponseInterface
      */
     public function getReference()
     {
-        return false;
+        return null;
     }
 
     /**

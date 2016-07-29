@@ -28,7 +28,7 @@ class SignResponse extends Response
      */
     public function isSuccessful()
     {
-        return false !== $this->getReference();
+        return !is_null($this->getReference());
     }
 
     /**
@@ -43,7 +43,7 @@ class SignResponse extends Response
             }
         }
 
-        return false;
+        return null;
     }
 
     /**
