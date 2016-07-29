@@ -43,7 +43,7 @@ class SignRequest extends AbstractRequest
     {
         $this->validate();
 
-        /** @var \Argentum\Common\Document\AbstractDocument|\Argentum\LibreDTE\Document\Invoice $document */
+        /** @var \Argentum\LibreDTE\Document\Invoice $document */
         $document = $this->getDocument();
 
         $details = [];
@@ -120,6 +120,7 @@ class SignRequest extends AbstractRequest
 
                 $response['pdf'] = $pdfResponse['body'];
             } catch (\Exception $e) {
+                // Don't throw any error if PDF generation fails
             }
         }
 
