@@ -38,7 +38,9 @@ class SignResponse extends Response
     {
         if (isset($this->data['xml'])) {
             preg_match_all('/<Folio>(.*?)<\/Folio>/mi', $this->data['xml'], $matches);
-            if (isset($matches[1][0])) return $matches[1][0];
+            if (isset($matches[1][0])) {
+                return $matches[1][0];
+            }
         }
 
         return false;
